@@ -12,7 +12,7 @@
 
 # docker 容器启动
 ```cmd
-  docker container run -p 8000:3000 -t docker/koa-server
+  docker container run -p 8000:3000 -t docker/koa-server --rm
 ```
 *** 每次运行都会重新创建一个容器，如果需要对同一个容器操作，请使用 `docker start/restart <id>` 命令 ***
 *** 可增加-d参数，指定容器后台运行 ***
